@@ -1,5 +1,6 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { BaseChartDirective } from 'ng2-charts';
+import { TranslateModule } from '@ngx-translate/core';
 import { ChartConfiguration } from 'chart.js';
 import { Chart, registerables } from 'chart.js';
 
@@ -7,7 +8,7 @@ Chart.register(...registerables);
 
 @Component({
   selector: 'app-statics-section',
-  imports: [BaseChartDirective],
+  imports: [BaseChartDirective, TranslateModule],
   templateUrl: './statics-section.html',
   styleUrl: './statics-section.css',
   standalone: true,

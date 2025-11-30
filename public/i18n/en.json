@@ -1,0 +1,79 @@
+{
+  "header": {
+    "product": "Product",
+    "pages": "Pages",
+    "integration": "Integration",
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "getStarted": "Get Started",
+    "slack": "Slack",
+    "zapier": "Zapier",
+    "notion": "Notion",
+    "googleDrive": "Google Drive"
+  },
+  "cover": {
+    "new": "New",
+    "aiAutomation": "Introducing AI Automation",
+    "title": "The Finance Solutions For Your Business",
+    "subtitle": "Empower your finance team. The onestop platform for all financial management of small and medium-sized business.",
+    "emailPlaceholder": "Enter your email address",
+    "bookDemo": "Book a Demo",
+    "reviews": "1,200+ reviews (4.9 of 5)"
+  },
+  "demo": {
+    "title": "Let's Upgrade your finances experience by using FinBiz",
+    "requestDemo": "Request Demo",
+    "watchVideo": "Watch Video"
+  },
+  "stats": {
+    "totalProfit": "Total Profit",
+    "totalRevenue": "Total revenue",
+    "productSold": "Product sold",
+    "transfer": "Transfer",
+    "independentContractor": "Independent Contractor",
+    "contractedEmployee": "Contracted Employee",
+    "stakeholders": "Stakeholders"
+  },
+  "tabs": {
+    "product": "Product",
+    "integration": "Integration",
+    "demo": "Demo",
+    "pricing": "Pricing",
+    "login": "Login",
+    "analyticsDesc": "Make informed decisions backed by data through our analytics tools.",
+    "teamExpensesDesc": "Bring harmony to team expenses with budget limits and real-time monitoring. Freedom for your staff. Peace of mind for you.",
+    "collaborateDesc": "Seamlessly collaborate with your team members like never before.",
+    "bookkeepingDesc": "Take the pain out of book keeping! Wave goodbye to mountains of paperwork and endless email reminders. There's now a new way of accounting.",
+    "optimiseTitle": "Optimise expense Management as a team",
+    "optimiseDesc": "Bring harmony to team expenses with budget limits and real-time monitoring. Freedom for your staff. Peace of mind for you.",
+    "exploreMore": "Explore More",
+    "collaborationComingSoon": "Collaboration content coming soon...",
+    "accountingComingSoon": "Accounting content coming soon..."
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "Find the right plan",
+    "description": "Invest in your company's future with our comprehensive financial solution. Contact us for pricing details and see how we can help you streamline your finances and reach your business goals.",
+    "perMonth": "/month"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What are people saying",
+    "description": "Thank you for your trust in Crypt Land! We are grateful for your feedback and are committed to providing the best products/services offered. Read what our clients have to say about their experience with us."
+  },
+  "footer": {
+    "description": "Data analysis software is a type of software tool used for data analysis and reporting.",
+    "company": "Company",
+    "services": "Services",
+    "resources": "Resources",
+    "aboutUs": "About Us",
+    "help": "Help",
+    "customerSupport": "Customer Support",
+    "termsConditions": "Terms & Conditions",
+    "privacyPolicy": "Privacy Policy",
+    "newsletter": "Subscribe to newsletter",
+    "emailPlaceholder": "Enter your email",
+    "join": "Join",
+    "copyright": "© Copyright 2024, All Rights Reserved by FinBiz."
+  }
+}

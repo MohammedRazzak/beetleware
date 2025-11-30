@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit, inject, signal } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -12,7 +13,7 @@ interface Testimonial {
 
 @Component({
   selector: 'app-testimonials-section',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './testimonials-section.html',
   styleUrl: './testimonials-section.css',
   standalone: true,

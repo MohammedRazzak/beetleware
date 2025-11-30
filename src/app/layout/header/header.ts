@@ -1,10 +1,11 @@
 import { Component, ChangeDetectionStrategy, signal, inject } from '@angular/core';
 import { BetButton } from '../../shared/bet-button/bet-button';
 import { LanguageService } from '../../services/language.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [BetButton],
+  imports: [BetButton, TranslateModule],
   templateUrl: './header.html',
   styleUrl: './header.css',
   standalone: true,

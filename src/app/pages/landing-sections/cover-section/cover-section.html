@@ -1,18 +1,18 @@
 
     <div class="flex flex-col gap-6 items-center pt-[40px] lg:pt-[100px] pb-[60px] lg:w-[53%] w-[100%]  mx-auto">
         <div class="flex items-center gap-2 border border-beet-gray-2 rounded-lg p-[4px] cursor-pointer">
-            <span class="bg-beet-primary text-white px-[8px] py-[2px] rounded-lg text-[14px] font-medium">New</span>
-            <p class="text-[14px] font-medium">Introducing AI Automation</p>
+            <span class="bg-beet-primary text-white px-[8px] py-[2px] rounded-lg text-[14px] font-medium">{{ 'cover.new' | translate }}</span>
+            <p class="text-[14px] font-medium">{{ 'cover.aiAutomation' | translate }}</p>
             <i class="fa-solid fa-arrow-right text-beet-primary me-1"></i>
         </div>
-        <h1 class="lg:text-[72px] text-[40px] font-bold lg:leading-tight leading-tight  text-center">The Finance Solutions For Your Business</h1>
-        <p class="text-[22px] font-normal leading-9  text-center text-beet-gray-5 mb-[50px]">Empower your finance team. The onestop plateform for all financial management of small and medium-sized business.</p>
+        <h1 class="lg:text-[72px] text-[40px] font-bold lg:leading-tight leading-tight  text-center">{{ 'cover.title' | translate }}</h1>
+        <p class="text-[22px] font-normal leading-9  text-center text-beet-gray-5 mb-[50px]">{{ 'cover.subtitle' | translate }}</p>
         <div class="flex bg-white h-[72px] rounded-lg overflow-hidden lg:w-[70%] w-[100%] mx-auto p-[6px] mb-[60px]">
-            <input type="text" placeholder="Enter your email address" class="w-full p-[12px] outline-none">
-            <app-bet-button [label]="'Book a Demo'" [type]="'secondary'" [radius]="'lg'"></app-bet-button>
+            <input type="text" [placeholder]="'cover.emailPlaceholder' | translate" class="w-full p-[12px] outline-none">
+            <app-bet-button [label]="'cover.bookDemo' | translate" [type]="'secondary'" [radius]="'lg'"></app-bet-button>
         </div>
         <div class="flex items-center gap-2 flex-col">
             <img src="/images/reviews.svg" alt="reviews">
-            <span class="text-[14px] font-semibold text-beet-gray-5">1,200+ reviews (4.9 of 5)</span>
+            <span class="text-[14px] font-semibold text-beet-gray-5">{{ 'cover.reviews' | translate }}</span>
         </div>
     </div>

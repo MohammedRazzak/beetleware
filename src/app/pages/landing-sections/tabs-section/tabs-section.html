@@ -6,7 +6,7 @@
             (click)="setActiveTab(i)"
             class="lg:px-6 px-4 py-3 rounded-full lg:text-base text-sm font-medium transition-all border-0 cursor-pointer"
             [class]="activeTab() === i ? 'bg-white text-black' : ' border text-beet-secondary hover:bg-beet-gray-3'">
-            {{ tab.label }}
+            {{ tab.label | translate }}
         </button>
     }
 </div>
@@ -15,19 +15,17 @@
 @if (activeTab() === 0) {
 <div class="grid grid-cols-12  gap-6">
     <div class="lg:col-span-3 col-span-12  border border-beet-gray-6 rounded-[30px] p-6 bg-white pt-[95px] flex items-center flex-col">
-        <p class="text-lg font-normal leading-8 text-beet-gray-2 pb-6 text-center">Make informed decisions backed by 
-data through our analytics tools. </p>
+        <p class="text-lg font-normal leading-8 text-beet-gray-2 pb-6 text-center">{{ 'tabs.analyticsDesc' | translate }}</p>
 
         <img src="/images/chart1.svg" alt="">
     </div>
     <div class="lg:col-span-6 col-span-12  border border-beet-gray-6 rounded-[30px] p-6 bg-white pt-[95px] flex items-center flex-col">
-        <p class="text-lg font-normal leading-8 text-beet-gray-2 pb-6 text-center">Bring harmony to team expenses with budget limits and real-time monitiring. Freedom for your staff. Peace of mind for you.</p>
+        <p class="text-lg font-normal leading-8 text-beet-gray-2 pb-6 text-center">{{ 'tabs.teamExpensesDesc' | translate }}</p>
 
         <img src="/images/chart2.svg" alt="">
     </div>
     <div class="lg:col-span-3 col-span-12 border border-beet-gray-6 rounded-[30px] p-6 bg-white pt-[95px] flex items-center flex-col">
-        <p class="text-lg font-normal leading-8 text-beet-gray-2 pb-6 text-center">Seamlessly collaborate with your team 
-members like never before. </p>
+        <p class="text-lg font-normal leading-8 text-beet-gray-2 pb-6 text-center">{{ 'tabs.collaborateDesc' | translate }}</p>
 
         <div class="w-[264px] h-[264px] rounded-full overflow-hidden bg-beet-circle1 flex items-center justify-center">
             <div class="w-[208px] h-[208px] rounded-full overflow-hidden bg-beet-circle2 flex items-center justify-center">
@@ -39,7 +37,7 @@ members like never before. </p>
 
 <div class="grid grid-cols-12  gap-6 mt-6">
     <div class="lg:col-span-6 col-span-12 border border-beet-gray-6 rounded-[30px] p-6 px-[38px] bg-white pt-[65px] flex items-center flex-col justify-between">
-        <p class="text-xl font-normal leading-9 text-beet-gray-5 pb-6">Take the pain out of book keeping! Wave goodbye to mountains of paperwork and endless email reminders. There`s now a new way of accounting.</p>
+        <p class="text-xl font-normal leading-9 text-beet-gray-5 pb-6">{{ 'tabs.bookkeepingDesc' | translate }}</p>
         <div class="flex items-end justify-between w-full lg:flex-row flex-col">
             <div class="lg:w-[45%] w-[100%] bg-beet-gray-4 rounded-[20px] p-5">
                 <h3 class="lg:text-[30px] text-[20px] font-medium lg:leading-tight leading-10 border-b border-beet-secondary pb-6 mb-6">$350.240</h3>
@@ -52,23 +50,23 @@ members like never before. </p>
     </div>
     <div class="lg:col-span-6 col-span-12 border border-beet-gray-6 rounded-[30px] p-12 bg-white flex flex-col justify-between">
         <div>
-        <h2 class="lg:text-5xl text-3xl font-bold lg:leading-tight leading-10 w-[80%] mb-6">Optimise expense Management as a team</h2>
-        <p class="text-xl font-normal leading-9 text-beet-gray-5 mb-16">Bring harmony to team expenses with budget limits and real-time monitiring. Freedom for your staff. Peace of mind for you.</p>
+        <h2 class="lg:text-5xl text-3xl font-bold lg:leading-tight leading-10 w-[80%] mb-6">{{ 'tabs.optimiseTitle' | translate }}</h2>
+        <p class="text-xl font-normal leading-9 text-beet-gray-5 mb-16">{{ 'tabs.optimiseDesc' | translate }}</p>
         </div>
-        <app-bet-button [label]="'Explore More'" [type]="'secondary'" [radius]="'lg'" class="w-[200px]"></app-bet-button>
+        <app-bet-button [label]="'tabs.exploreMore' | translate" [type]="'secondary'" [radius]="'lg'" class="w-[200px]"></app-bet-button>
     </div>
 </div>
 }
 
 @if (activeTab() === 1) {
 <div class="flex items-center justify-center h-[400px] border border-beet-gray-6 rounded-[30px] bg-white">
-    <p class="text-2xl text-beet-gray-5">Collaboration content coming soon...</p>
+    <p class="text-2xl text-beet-gray-5">{{ 'tabs.collaborationComingSoon' | translate }}</p>
 </div>
 }
 
 @if (activeTab() === 2) {
 <div class="flex items-center justify-center h-[400px] border border-beet-gray-6 rounded-[30px] bg-white">
-    <p class="text-2xl text-beet-gray-5">Accounting content coming soon...</p>
+    <p class="text-2xl text-beet-gray-5">{{ 'tabs.accountingComingSoon' | translate }}</p>
 </div>
 }
 </div>
