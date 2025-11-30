@@ -1,0 +1,8 @@
+
+<button [class]="
+    (type() === 'primary' ? 'bg-beet-primary hover:bg-beet-primary/80 text-beet-secondary' : 
+     type() === 'outline' ? 'bg-transparent border border-beet-secondary text-beet-secondary hover:bg-beet-secondary/10' : 
+     'bg-beet-secondary hover:bg-beet-secondary/80 text-white') + ' ' + 
+    (radius() === 'lg' ? 'rounded-lg' : 'rounded-md') + ' ' +
+    'h-[60px] cursor-pointer font-medium text-btn px-6 w-full text-nowrap'
+">{{label()}}</button>

@@ -1,0 +1,35 @@
+<div class="flex flex-col lg:w-[80%] w-full mx-auto">
+    <span class="rounded-lg border-[1px] border-beet-gray p-2.5 w-fit px-3 mx-auto mb-5"><i class="fa-solid fa-tag"></i> Pricing</span>
+    <h2 class="lg:text-5xl text-3xl font-bold lg:leading-tight leading-10 mb-4 text-center">Find the right plan</h2>
+    <p class="text-lg font-normal leading-8 text-beet-gray mb-14 text-center  w-[80%] mx-auto">Invest in your company's future with our comprehensive financial solution. Contact us for pricing details and see how we can help you streamline your finances and reach your business goals.</p>
+    <ul class="grid grid-cols-12 gap-6">
+        @for (pricing of pricing(); track pricing.name) {
+        <li class="lg:col-span-4 col-span-12  lg:h-[800px] h-fit border-[1px] border-beet-gray rounded-[24px] lg:p-10  p-5 border-[1px] bg-[#F4F4F4] flex flex-col justify-between">
+            <div class="lg:mb-0 mb-3">
+                <h3 class="text-3xl font-normal leading-10 mb-6 text-center ">{{pricing.name}}</h3>
+                <p class="text-base font-normal leading-snug text-beet-gray text-center">{{pricing.desc}}</p>
+                <div class="lg:my-20 my-5 text-center">
+                    <p class="lg:text-4xl text-2xl font-medium leading-8">${{pricing.price}} <span class="text-base font-medium leading-4 text-beet-gray-2">/month</span></p>
+                </div>
+                <ol>
+                    @for (feature of pricing.features; track feature) {
+                            <li>
+                            <p class="text-base font-normal leading-5 text-beet-secondary mb-2">
+                                <i class="fa-solid fa-check text-sm me-1"></i>{{feature}}</p>
+                            </li>
+                    }
+                        </ol>
+                    </div>
+                    @if (pricing.name === 'Basic') {
+                        <app-bet-button [label]="'Get Started'" [type]="'outline'" [radius]="'md'"></app-bet-button>
+                    }
+                    @if (pricing.name === 'Pro') {
+                        <app-bet-button [label]="'Get Started'" [type]="'secondary'" [radius]="'lg'"></app-bet-button>
+                    }
+                    @if (pricing.name === 'Enterprise') {
+                        <app-bet-button [label]="'Get Started'" [type]="'primary'" [radius]="'md'"></app-bet-button>
+                    }
+                </li>
+        }
+    </ul>
+</div>

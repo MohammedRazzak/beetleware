@@ -1,0 +1,56 @@
+<header class="bg-white lg:py-4 relative">
+    <div class="container mx-auto flex items-center justify-between px-4 py-4 lg:py-0">
+        <a href="/" class="flex items-center">
+            <img src="/images/footer-logo.svg" alt="Logo" class="h-4">
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal">Product</a>
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal">Pages</a>
+            <div class="relative group">
+                <button class="text-beet-secondary hover:text-beet-secondary text-lg font-normal flex items-center gap-1">
+                    Intergration <i class="fa-solid fa-chevron-down text-xs"></i>
+                </button>
+                <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-[8px] shadow-lg border border-beet-gray-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 overflow-hidden">
+                    <a href="#" class="block px-4 py-3 text-beet-secondary hover:text-beet-secondary hover:bg-beet-gray-4 text-sm font-normal">Slack</a>
+                    <a href="#" class="block px-4 py-3 text-beet-secondary hover:text-beet-secondary hover:bg-beet-gray-4 text-sm font-normal">Zapier</a>
+                    <a href="#" class="block px-4 py-3 text-beet-secondary hover:text-beet-secondary hover:bg-beet-gray-4 text-sm font-normal">Notion</a>
+                    <a href="#" class="block px-4 py-3 text-beet-secondary hover:text-beet-secondary hover:bg-beet-gray-4 text-sm font-normal">Google Drive</a>
+                </div>
+            </div>
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal">Blog</a>
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal">Pricing</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-4">
+            <button 
+                (click)="toggleLanguage()" 
+                class="flex items-center gap-2 px-3 py-2 text-beet-secondary hover:text-beet-primary border border-beet-gray-3 rounded-lg transition-colors duration-200">
+                <i class="fa-solid fa-globe"></i>
+                <span class="text-sm font-medium">{{ currentLang() === 'en' ? 'العربية' : 'English' }}</span>
+            </button>
+            <app-bet-button [label]="'Get Started'" [type]="'outline'" [radius]="'md'"></app-bet-button>
+        </div>
+
+        <button (click)="toggleMenu()" class="md:hidden p-2 text-beet-secondary">
+            <i class="fa-solid fa-bars text-2xl cursor-pointer" [class.hidden]="isMenuOpen()"></i>
+        </button>
+    </div>
+
+    <nav class="md:hidden absolute left-0 right-0 top-full z-50" [class.hidden]="!isMenuOpen()">
+        <div class="container mx-auto px-4 py-4 flex flex-col gap-4 bg-white border-t border-beet-gray-3 shadow-lg">
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal py-2">Product</a>
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal py-2">Pages</a>
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal py-2">Intergration</a>
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal py-2">Blog</a>
+            <a href="#" class="text-beet-secondary hover:text-beet-secondary text-lg font-normal py-2">Pricing</a>
+            <button 
+                (click)="toggleLanguage()" 
+                class="flex items-center gap-2 px-3 py-2 text-beet-secondary hover:text-beet-primary border border-beet-gray-3 rounded-lg transition-colors duration-200 w-full justify-center">
+                <i class="fa-solid fa-globe"></i>
+                <span class="text-sm font-medium">{{ currentLang() === 'en' ? 'العربية' : 'English' }}</span>
+            </button>
+            <app-bet-button [label]="'Get Started'" [type]="'outline'" [radius]="'md'"></app-bet-button>
+        </div>
+    </nav>
+</header>

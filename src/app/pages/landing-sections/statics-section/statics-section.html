@@ -1,0 +1,82 @@
+<div class="shadow-card rounded-[20px] py-10 px-8 bg-white">
+    <div class="grid grid-cols-12  gap-6 ">
+        <div class="lg:col-span-4 col-span-12 border border-beet-gray-3 rounded-[20px] p-6">
+            <div class="flex items-center justify-between gap-2 mb-5">
+                <h2 class="text-xl font-normal leading-8 text-beet-gray-2">Total Profit</h2>
+                <span class="text-sm font-bold leading-4 text-beet-primary">+18.23</span>
+            </div>
+            <div class="flex items-center justify-between gap-2">
+                <h3 class="lg:text-6xl text-4xl font-medium lg:leading-tight leading-10">$350.240</h3>
+                <img src="/images/green.svg" alt="">
+            </div>
+        </div>
+        <div class="lg:col-span-4 col-span-12 border border-beet-gray-3 rounded-[20px] p-6">
+            <div class="flex items-center justify-between gap-2 mb-5">
+                <h2 class="text-xl font-normal leading-8 text-beet-gray-2">Total revenue</h2>
+                <span class="text-sm font-bold leading-4 text-beet-instagram">+18.23</span>
+            </div>
+            <div class="flex items-center justify-between gap-2">
+                <h3 class="lg:text-6xl text-4xl font-medium lg:leading-tight leading-10">$350.240</h3>
+                <img src="/images/red.svg" alt="">
+            </div>
+        </div>
+        <div class="lg:col-span-4 col-span-12 border border-beet-gray-3 rounded-[20px] p-6">
+            <div class="flex items-center justify-between gap-2 mb-5">
+                <h2 class="text-xl font-normal leading-8 text-beet-gray-2">Product sold</h2>
+                <span class="text-sm font-bold leading-4 text-beet-facebook">+18.23</span>
+            </div>
+            <div class="flex items-center justify-between gap-2">
+                <h3 class="lg:text-6xl text-4xl font-medium lg:leading-tight leading-10">$350.240</h3>
+                <img src="/images/blue.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-10 gap-6 mt-6">
+        <div class="lg:col-span-2 col-span-10 border border-beet-gray-3 rounded-[20px] p-6">
+            <div class="flex justify-between flex-col pb-5 mb-5 border-b border-beet-gray-3">
+                <h2 class="text-lg font-normal leading-8 text-beet-gray-2">Product sold</h2>
+                <h3 class="lg:text-5xl text-3xl font-medium lg:leading-tight leading-10">$350.240</h3>
+                <button class="bg-beet-secondary text-white px-[70px] py-2 rounded-[8px]">Transfer</button>
+            </div>
+            <div class="flex justify-between flex-col pb-5 mb-5 border-b border-beet-gray-3">
+                <h2 class="text-lg font-normal leading-8 text-beet-gray-2">Product sold</h2>
+                <h3 class="lg:text-5xl text-3xl font-medium lg:leading-tight leading-10">$350.240</h3>
+            </div>
+            <div class="flex justify-between flex-col">   
+                <h2 class="text-lg font-normal leading-8 text-beet-gray-2">Product sold</h2>
+                <h3 class="lg:text-5xl text-3xl font-medium lg:leading-tight leading-10">$350.240</h3>
+            </div>
+        </div>
+        <div class="lg:col-span-6 col-span-10  border border-beet-gray-3 rounded-[20px] p-6 flex flex-col justify-end">
+            <div class="h-full">
+                <canvas baseChart
+                    [data]="chartData"
+                    [options]="chartOptions"
+                    type="line">
+                </canvas>
+            </div>
+        </div>
+        <div class="lg:col-span-2 col-span-10 ">
+            <div>
+                <h3 class="mb-4 text-lg font-normal leading-8 text-beet-secondary">Product sold</h3>
+                <div class="h-[14px] w-[100px] bg-beet-gray-5 rounded-full mb-3.5"></div>
+                <div class="h-[14px] w-[200px] bg-beet-gray-6 rounded-full"></div>
+            </div>
+            <div>
+                <h3 class="mb-4 text-lg font-normal leading-8 text-beet-secondary mt-8">Independent Contractor </h3>
+                <div class="h-[14px] w-[100px] bg-beet-gray-5 rounded-full mb-3.5"></div>
+                <div class="h-[14px] w-[200px] bg-beet-gray-6 rounded-full"></div>
+            </div>
+            <div>
+                <h3 class="mb-4 text-lg font-normal leading-8 text-beet-secondary mt-8">Contracted Employee</h3>
+                <div class="h-[14px] w-[100px] bg-beet-gray-5 rounded-full mb-3.5"></div>
+                <div class="h-[14px] w-[200px] bg-beet-gray-6 rounded-full"></div>
+            </div>
+            <div>
+                <h3 class="mb-4 text-lg font-normal leading-8 text-beet-secondary  mt-8">Stakeholders</h3>
+                <div class="h-[14px] w-[100px] bg-beet-gray-5 rounded-full mb-3.5"></div>
+                <div class="h-[14px] w-[200px] bg-beet-gray-6 rounded-full"></div>
+            </div>
+        </div>
+    </div>
+</div>

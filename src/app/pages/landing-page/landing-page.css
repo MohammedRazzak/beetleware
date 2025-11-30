@@ -1,0 +1,6 @@
+.bg-img{
+    background-image: url("/images/bg.svg");
+    background-size: contain;
+    background-position: 0px 850px;
+    background-repeat: no-repeat;
+}
