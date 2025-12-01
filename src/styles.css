@@ -17,7 +17,6 @@
 
 body {
   font-family: "DM Sans", sans-serif;
-  background: #F6F6F6;
 }
 
 /* RTL Support */
@@ -37,6 +36,7 @@ html[dir="rtl"] {
   --color-beet-gray-2:#4F4F4F;
   --color-beet-gray-3:#E0E0E0;
   --color-beet-gray-4:#F6F6F6;
+  --color-beeet-background:#F2F2F2;
   --color-beet-gray-5:#828282;
   --color-beet-gray-6:#BDBDBD;
   --color-beet-twitter:#1DA1F2;
@@ -45,6 +45,9 @@ html[dir="rtl"] {
   --color-beet-github:#333333;
   --color-beet-circle1:#F4F4F4;
   --color-beet-circle2:#E5EADB;
+  --color-beet-green:#236456;
+  --color-beet-green-2:#112220;
+  --color-beet-green-3:#33C6AB;
   --radius-lg: 100px;
   --radius-md: 64px;
   --font-weight-medium: 500;

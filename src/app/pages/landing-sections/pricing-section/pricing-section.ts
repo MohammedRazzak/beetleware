@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, inject, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BetButton } from '../../../shared/bet-button/bet-button';
 import { TranslateModule } from '@ngx-translate/core';
 import { SupabaseService } from '../../../services/supabase.service';
@@ -13,7 +14,7 @@ interface Pricing {
 
 @Component({
   selector: 'app-pricing-section',
-  imports: [BetButton, TranslateModule],
+  imports: [BetButton, TranslateModule, CommonModule],
   templateUrl: './pricing-section.html',
   styleUrl: './pricing-section.css',
   standalone: true,

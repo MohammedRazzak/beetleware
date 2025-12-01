@@ -4,9 +4,15 @@
     <p class="text-lg font-normal leading-8 text-beet-gray mb-14 text-center  w-[80%] mx-auto">{{ 'pricing.description' | translate }}</p>
     <ul class="grid grid-cols-12 gap-6">
         @for (pricing of pricing(); track pricing.name) {
-        <li class="lg:col-span-4 col-span-12  lg:h-[800px] h-fit border-[1px] border-beet-gray rounded-[24px] lg:p-10  p-5 border-[1px] bg-[#F4F4F4] flex flex-col justify-between">
+        <li class="lg:col-span-4 col-span-12  lg:h-[800px] h-fit border-[1px] border-beet-gray rounded-[24px] lg:p-10  p-5 border-[1px] bg-[#F4F4F4] flex flex-col justify-between relative">
+            @if (pricing.name.toLowerCase() === 'pro') {
+            <div class="absolute top-6 end-6 border-[2px] border-beet-green p-1 px-2 rounded-[32px] bg-beet-green-2 text-beet-green-3 text-[14px]">
+                <i class="fa-regular fa-star mx-1"></i>
+                <span>Popular</span>
+            </div>
+            }
             <div class="lg:mb-0 mb-3">
-                <h3 class="text-3xl font-normal leading-10 mb-6 text-center ">{{pricing.name}}</h3>
+                <h3 class="text-[32px] font-normal leading-10 mb-6 text-center pt-[32px]" [ngClass]="{ 'text-beet-primary': pricing.name.toLowerCase() === 'pro' }">{{pricing.name}}</h3>
                 <p class="text-base font-normal leading-snug text-beet-gray text-center">{{pricing.desc}}</p>
                 <div class="lg:my-20 my-5 text-center">
                     <p class="lg:text-4xl text-2xl font-medium leading-8">${{pricing.price}} <span class="text-base font-medium leading-4 text-beet-gray-2">{{ 'pricing.perMonth' | translate }}</span></p>
