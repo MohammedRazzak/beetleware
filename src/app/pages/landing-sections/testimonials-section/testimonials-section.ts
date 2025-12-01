@@ -2,8 +2,6 @@ import { Component, ChangeDetectionStrategy, CUSTOM_ELEMENTS_SCHEMA, AfterViewIn
 import { TranslateModule } from '@ngx-translate/core';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { SupabaseService } from '../../../services/supabase.service';
 
 interface Testimonial {
