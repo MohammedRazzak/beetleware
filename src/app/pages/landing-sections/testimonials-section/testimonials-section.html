@@ -6,8 +6,8 @@
     </div>
 </div>
 
-<div class="mx-auto">
-    <div class="swiper mySwiper">
+<div class="mx-auto" [dir]="isRtl() ? 'rtl' : 'ltr'">
+    <div class="swiper mySwiper" #swiperContainer>
         <div class="swiper-wrapper">
             @for (testimonial of testimonials(); track testimonial.quote) {
                 <div class="swiper-slide">

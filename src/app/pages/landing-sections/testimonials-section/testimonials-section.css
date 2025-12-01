@@ -43,3 +43,16 @@
   transform: rotate(-45deg);
   margin-right: 4px;
 }
+
+/* RTL Support - flip arrows */
+:host-context([dir="rtl"]) .swiper-button-prev::before {
+  transform: rotate(-45deg);
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+:host-context([dir="rtl"]) .swiper-button-next::before {
+  transform: rotate(135deg);
+  margin-right: 0;
+  margin-left: 4px;
+}
